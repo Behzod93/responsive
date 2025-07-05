@@ -1,0 +1,51 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+.container{
+    width: 1200px;
+
+
+}
+.general{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.box{
+    width: 250px;
+    border: 1px solid black;
+}
+.rasm{
+    width: 150px;
+    display: flex;
+    
+}
+.btn{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.plus{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    padding: 5px auto;
+    margin: 0 auto;
+
+}

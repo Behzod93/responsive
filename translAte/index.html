@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+</head>
+<body>
+    <h1>Zuhriddinov Behzod</h1>
+    <p>Salom do'stlar mening ismim Behzod!</p>
+    <div id="google_translate_element">Translate</div>
+
+    <!-- Google Translate API -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Sahifaning tili
+                includedLanguages: 'uz,ar,en,es,de,fr,it,ru,zh-CN,ja,ko,pt', // Kerakli tillar
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+</body>
+</html>

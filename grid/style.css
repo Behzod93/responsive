@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.img{
+    width: 200px;
+}
+.general{
+    display: grid;
+    grid-template-columns: repeat(6, auto );
+    grid-gap: 0px 20px;
+    text-align: center;
+}
+.name{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+.btn{
+   text-align: center;
+   padding: 0px 40px;
+   margin: 5px;
+    border-radius: 10px;
+}

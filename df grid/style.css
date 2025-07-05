@@ -1,0 +1,155 @@
+/* *{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container{
+    width: 1300px;
+    margin: 10px;
+}
+.general{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 0 10px;
+    gap: 10px 10px ;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+.box{
+    padding: 40px;
+    margin: 0;
+    background-color: rgb(95, 95, 190);
+    color: #000;
+     
+}
+.box:nth-child(1){
+    grid-column: 1 / 7;
+}
+
+.box:nth-child(6){
+    grid-column: 1 / 7;
+}
+.box:nth-child(5){
+    grid-column: 2 / ;
+}
+.box2,.box5{
+    height: 500px;
+}
+.box3{
+    width: 450px;
+    height: 250px;
+}
+.box4{
+    position: relative;
+    top: 265px;
+    right: 475px;
+    width: 550px;
+    height: 250px;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .grid-layout {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar-left main sidebar-right"
+      "footer footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  /* Grid Areas */
+  .header {
+    grid-area: header;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .sidebar-left {
+    grid-area: sidebar-left;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  .sidebar-right {
+    grid-area: sidebar-right;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  .main-content {
+    grid-area: main;
+    padding: 20px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Container and boxes */
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .general {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .box {
+    background-color: rgb(95, 95, 190);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .box:nth-child(1),
+  .box:nth-child(6) {
+    grid-column: 1 / 7;
+  }
+  
+  .box:nth-child(5) {
+    height: 500px;
+  }
+  
+  .box2, .box5 {
+    height: 500px;
+  }
+  
+  .box3 {
+    width: 100%;
+    padding: 240px;
+  }
+  
+  .box4 {
+    position: relative;
+    top: -290;
+    padding: 240px;
+    width: 100%;
+  }
+  .box5, .box2{
+    padding: 200px;
+  }

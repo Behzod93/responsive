@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+
+                <div class="header-text">
+                    <h2>AI ChatBot</h2>
+                    <small>online</small>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="header-btn" id="settings-btn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <button class="header-btn" id="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="suggestions">
+            <div class="suggestion">What can you do?</div>
+            <div class="suggestion">Tell me a joke</div>
+            <div class="suggestion">Explain AI in simple terms</div>
+            <div class="suggestion">Help with coding</div>
+            <div class="suggestion">Lastest Teach news</div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                <div class="message-options">
+                    <button class="options-btn" title="Copy"><i class="fas fa-copy"></i></button>
+                    <button class="options-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                </div>
+                Hello! I'm your AI ChatBot. How can I help you today?
+                <div class="message-time">Today, 10:30 PM</div>
+            </div>
+        </div>
+        <div class="status-bar">
+            <div class="connection-status">
+                <div class="status-indicator"></div>
+                <span class="status-text">Connected</span>
+            </div>
+            <div class="modal-info">BekGpt Coder</div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="input-actions">
+                <button class="input-btn" title="Attach file">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <button class="input-btn" title="Emoji">
+                    <i class="far fa-smile"></i>
+                </button>
+            </div>
+
+            <textarea id="message-input" placeholder="Type a message..." rows="1"></textarea>
+            <button id="send-btn" title="Send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Context Menu -->
+     <div class="context-menu" id="context-menu">
+        <div class="context-item">
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+        </div>
+        <div class="context-item">
+            <i class="fas fa-share"></i>
+        </div>
+        <div class="context-divider"></div>
+        <div class="context-item">
+            <i class="fas fa-trash"></i>
+            <span>Delete</span>
+        </div>
+     </div>
+
+     <!-- Settings Modal -->
+      <div class="modal-overlay" id="settings-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Settings</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-item">
+                    <div>
+                        <div class="settings-label">Dark Mode</div>
+                        <div class="settings-description">Toggle betwwen light and dark theme</div>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="settings-item">
+                    <div>
+                        <div class="settings-label">Message Sounds</div>
+                        <div class="settings-description">Play sound when receiving messages</div>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="sounds-toggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="settings-item">
+                    <div>
+                        <div class="settings-label">Typing Indicators</div>
+                        <div class="settings-description">Show when AI is typing</div>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="typing-toggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn modal-btn-secondary">Cancel</button>
+                <button class="modal-btn modal-btn-primary">Save</button>
+            </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

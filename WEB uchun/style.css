@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(145, 200, 200);
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.header_nav{
+   
+}
+.logo{
+    width: 130px;
+    border-radius: 35px;
+    
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+
+}

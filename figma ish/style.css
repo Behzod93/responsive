@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.general {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    background-color: #8f8686;
+    padding: 20px;
+   
+}
+
+.box {
+    background-color: white;
+    
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.general,.box{
+    text-align: center;
+    align-items: center;
+     justify-content: space-around;
+}
+.figma-img1 {
+    position: relative;
+    top: -90px;
+}
+/* toys */
+/* .toys-general{
+    display: grid;
+    grid-template-columns:auto auto auto  auto;
+    grid-gap: 0 20px;
+    background-color: #d69090;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.toys-general {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 ta teng ustun */
+    gap: 20px; /* eski "grid-gap" o‘rniga to‘g‘ri yozilishi */
+    background-color: #d69090;
+    padding: 20px;
+}
+
+.toys {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Bolalar o'yini */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bola-general {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Ikkita teng ustun */
+    gap: 20px;
+    
+    
+}
+
+.bola {
+    background-color: #e9d2d2;
+    text-align: center;
+    align-items: center;
+
+}
+
+.bola-img {
+    width: 100%;
+}
+

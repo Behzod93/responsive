@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 600px;
+    margin: 200px auto ;
+    padding: 40px auto;
+    gap: 40px;
+
+}
+input{
+    background-color: rgb(216, 224, 230);
+    color: #e21212ea;
+    border-radius: 5px;
+}
+.box{
+ 
+    
+}
+.btn{
+    width: 100%;
+    background-color: rgb(82, 82, 220);
+    border-radius: 5px;
+
+}
+.btn_footer{
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+
+
+}
+.btn_footer:hover{
+    background-color: #3e32de;
+
+
+}
+.btn:focus{
+    background-color: rgb(220, 34, 14);
+}
+
